@@ -1,3 +1,30 @@
+main {
+  display: grid;
+  width: 1425px;
+  height: 745px;
+  margin: 0 auto;
+  grid-template-columns: 80% 20%;
+  grid-template-rows: 70% 30%;
+  grid-template-areas:
+    "name sun"
+    "ocean ocean";
+}
+
+.name {
+  background-color: #A0CFEC;
+  grid-area: name;
+}
+
+.sun {
+  background-color: #AFDCEC;
+  grid-area: sun;
+}
+
+.ocean {
+  background-color: #77BFC7;
+  grid-area: ocean;
+}
+
 .name {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 130px;
@@ -12,7 +39,7 @@
   margin-top: 0;
 }
 
-.nameContainer {
+/* .nameContainer {
   height: auto;
   width: auto;
   margin: 100px 0 0 150px;
@@ -84,4 +111,4 @@ a {
 
 .fab {
   margin: 0 5px 0 5px;
-}
+} */
