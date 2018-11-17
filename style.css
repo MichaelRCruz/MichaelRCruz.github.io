@@ -27,3 +27,39 @@
   background-color: #ffa91c;
   border-radius: 100%;
 }
+
+.palmTree {
+  width: 304px;
+  height: 228px;
+  position: absolute;
+  bottom: 0;
+  right: 22%;
+}
+
+.ocean {
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: blue;
+  z-index: -1;
+}
+
+.water1, .water2, .water3 {
+  width: 100%;
+}
+
+.water3 {
+  background-color: blue;
+  height: 10%;
+}
+
+.water2 {
+  background-color: green;
+  height: 30%;
+}
+
+.water1 {
+  background-color: red;
+  height: 60%;
+}
