@@ -8,7 +8,7 @@
 .title {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 35px;
-  padding: 0 0 0 145px;
+  padding: 0 145px 0 0;
   margin-top: 0;
 }
 
@@ -50,16 +50,38 @@
 }
 
 .water3 {
-  background-color: blue;
+  background-color: #bad4ff
+;
   height: 10%;
 }
 
 .water2 {
-  background-color: green;
+  background-color: #76aaff;
   height: 30%;
 }
 
 .water1 {
-  background-color: red;
+  background-color: #1C72FF;
   height: 60%;
+}
+
+.pierre {
+  padding: 0;
+  margin-top: -20px;
+  width: 45px;
+  height: 45px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background: url('pierre.jpg');
+  background-size: 60px;
+  background-position: -15px -10px;
+}
+
+a {
+  margin: 0 0 5px 0;
+  color: inherit;
+}
+
+.fab {
+  margin: 0 5px 0 5px;
 }
