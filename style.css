@@ -1,35 +1,38 @@
 main {
+  overflow-x: hidden;
+  overflow-y: hidden;
   display: grid;
-  width: 1425px;
-  height: 745px;
+  width: 1435px;
+  height: 753px;
   margin: 0 auto;
   grid-template-columns: 80% 20%;
   grid-template-rows: 70% 30%;
   grid-template-areas:
-    "info sun"
+    "info sunContainer"
     "ocean ocean";
 }
 
 .info {
-  background-color: #A0CFEC;
   grid-area: info;
 }
 
-.sun {
-  grid-area: sun;
+.sunContainer {
+  grid-area: sunContainer;
 }
 
 .ocean {
-  background-color: #77BFC7;
   grid-area: ocean;
+  position: relative;
 }
 
 .infoContainer {
   width: 900px;
-  height: 210px;
+  margin-top: 100px;
+  margin-left: 100px;
+  height: auto;
   grid-area: info;
   display: grid;
-  grid-template-columns: 618px auto;
+  grid-template-columns: 623px auto;
   grid-template-rows: auto auto auto;
   grid-template-areas:
     "name name"
@@ -38,36 +41,31 @@ main {
 }
 
 .name {
-  background-color: red;
   grid-area: name;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 130px;
 }
 
 .title {
-  background-color: green;
   grid-area: title;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 40px;
-  padding-right: 0;
+  padding-left: 10px;
   padding-top: 10px;
 }
 
 .pierreContainer {
-  background-color: blue;
   grid-area: pierreContainer;
 }
 
 .links {
-  background-color: white;
   grid-area: links;
+  padding-left: 8px;
 }
 
 .pierre {
-  background-color: #77BFC7;
   grid-area: pierre;
-  padding: 0;
-  /* margin-top: -20px; */
+  margin-left: 10px;
   width: 45px;
   height: 45px;
   border: 1px solid black;
@@ -80,42 +78,24 @@ main {
 .sun {
   width: 300px;
   height: 300px;
-  position: fixed;
-  right: -45px;
-  top: -45px;
+  position: relative;
+  top: -20px;
+  right: -20px;
   background-color: #ffa91c;
   border-radius: 100%;
-}
-
-a {
-  margin: 0 0 5px 0;
-  color: inherit;
-}
-
-.fab {
-  margin: 0 5px 0 5px;
-}
-
-/* .nameContainer {
-  height: auto;
-  width: auto;
-  margin: 100px 0 0 150px;
 }
 
 .palmTree {
   width: 304px;
   height: 228px;
-  position: absolute;
-  bottom: 0;
-  right: 22%;
+  margin-left: 900px;
 }
 
-.ocean {
+.oceanContainer {
   height: 50px;
   width: 100%;
   position: absolute;
   bottom: 0;
-  background-color: blue;
   z-index: -1;
 }
 
@@ -124,8 +104,7 @@ a {
 }
 
 .water3 {
-  background-color: #bad4ff
-;
+  background-color: #bad4ff;
   height: 10%;
 }
 
@@ -140,10 +119,9 @@ a {
 }
 
 a {
-  margin: 0 0 5px 0;
   color: inherit;
 }
 
 .fab {
-  margin: 0 5px 0 5px;
-} */
+  margin: 25px 5px 0 5px;
+}
