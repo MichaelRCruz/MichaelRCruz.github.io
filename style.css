@@ -1,41 +1,13 @@
-main {
-  overflow-x: hidden;
-  overflow-y: hidden;
-  display: grid;
-  width: 1435px;
-  height: 753px;
-  margin: 0 auto;
-  grid-template-columns: 80% 20%;
-  grid-template-rows: 70% 30%;
-  grid-template-areas:
-    "info sunContainer"
-    "ocean ocean";
-}
-
 .info {
-  grid-area: info;
-}
-
-.sunContainer {
-  grid-area: sunContainer;
-}
-
-.ocean {
-  grid-area: ocean;
-  position: relative;
-}
-
-.infoContainer {
-  width: 900px;
+  width: auto;
   margin-top: 100px;
   margin-left: 100px;
   height: auto;
-  grid-area: info;
   display: grid;
   grid-template-columns: 100px auto;
   grid-template-rows: auto auto auto;
   grid-template-areas:
-    "pierreContainer name"
+    "pierre name"
     "title title"
     "links links";
 }
@@ -52,10 +24,6 @@ main {
   font-size: 40px;
   padding-left: 10px;
   padding-top: 10px;
-}
-
-.pierreContainer {
-  grid-area: pierreContainer;
 }
 
 .links {
@@ -79,17 +47,20 @@ main {
 .sun {
   width: 300px;
   height: 300px;
-  position: relative;
-  top: -20px;
-  right: -20px;
+  position: absolute;
+  top: -10%;
+  right: 0;
   background-color: #ffa91c;
   border-radius: 100%;
+  z-index: -1;
 }
 
 .palmTree {
   width: 304px;
   height: 228px;
-  margin-left: 900px;
+  right: 20%;
+  position: absolute;
+  bottom: 0;
 }
 
 .oceanContainer {
@@ -126,4 +97,38 @@ a {
 
 .fab {
   margin: 25px 5px 0 5px;
+}
+
+@media only screen and (max-width: 850px) {
+  .main {
+    width: 100%;
+  }
+  .info {
+    margin: 50px 0 0 0;
+    width: 350px;
+  }
+  .oceanContainer {
+    width: 100%;
+  }
+  .sun {
+    width: 200px;
+    height: 200px;
+  }
+  .name {
+    font-size: 46px;
+    margin-top: 50px;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .palmTree {
+    width: 150px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .info {
+    margin-top: 200px;
+  }
 }
