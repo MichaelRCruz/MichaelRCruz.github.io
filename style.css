@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 .info {
   width: auto;
   margin-top: 100px;
