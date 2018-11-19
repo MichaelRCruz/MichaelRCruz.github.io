@@ -48,8 +48,8 @@
   width: 300px;
   height: 300px;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -10%;
+  right: -10%;
   background-color: #ffa91c;
   border-radius: 100%;
   z-index: -1;
@@ -99,36 +99,36 @@ a {
   margin: 25px 5px 0 5px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 850px) {
   .main {
-    width: 350px;
+    width: 100%;
   }
-
   .info {
-    margin: 190px 0 0 0;
+    margin: 50px 0 0 0;
     width: 350px;
   }
-
   .oceanContainer {
-    width: 374px;
+    width: 100%;
   }
-
   .sun {
     width: 200px;
     height: 200px;
   }
-
   .name {
     font-size: 46px;
     margin-top: 50px;
   }
-
   .title {
     font-size: 20px;
   }
-
   .palmTree {
     width: 150px;
     height: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .info {
+    margin-top: 200px;
   }
 }
