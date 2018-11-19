@@ -105,7 +105,8 @@ a {
   }
   .info {
     margin: 50px 0 0 0;
-    width: 350px;
+    width: 380px;
+    text-align: right;
   }
   .oceanContainer {
     width: 100%;
